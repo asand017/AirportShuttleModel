@@ -93,18 +93,6 @@ extern "C" void sim(int argc, char *argv[])      // main process
       shuttle_called = new event_set("call button", num_terms + 1);
       get_off_now = new event_set("get off now", num_terms + 1);
 
-      /*for(unsigned int i = 0; i < places.size(); i++){
-	 cout << places[i] << endl;
-      }
-
-      cout << endl;
-      
-      
-
-      for(unsigned int i = 0; i < people.size(); i++){
-	 cout << people[i] << endl;
-      }*/
-      
       create("sim");
       shuttle_occ.add_histogram(NUM_SEATS+1,0,NUM_SEATS);
       for(unsigned int i = 0; i < TERMNL + 1; i++){
